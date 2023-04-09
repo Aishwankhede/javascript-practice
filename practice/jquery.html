@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Practice</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <!-- <script> $('#para').css("color", "red")</script> -->
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores deleniti et ut, asperiores atque optio consectetur doloremque inventore minus facere, odio pariatur magni illo itaque veritatis quibusdam fugiat ea autem!</p>
+    <script>
+        $(function(){
+            // $('#para').css("color", "red")
+            $("#para").on({
+                mouseenter:function(){
+                    $(this).css("background-color", "purple")
+                },  
+                mouseleave:function(){
+                    $(this).css("background-color", "red")
+
+                }
+            })
+        });
+       
+    
+    </script>
+
+    <!-- <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quod non iste, aliquam praesentium, soluta autem reiciendis fugit porro obcaecati, assumenda architecto amet sit mollitia ad! Facilis sed maxime impedit.</p> -->
+    
+</body>
+</html>
