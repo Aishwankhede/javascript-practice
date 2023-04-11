@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const colorvariants = ["red", "blue", "black"];
+      const weekDays = [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "sunday",
+      ];
+      const nature = ["sky", "water", "fire", "sand", "air"];
+      //spread - it makes a clone -
+      //it creates a new array in the memory with the unique reference
+      const duplicateColorVariant = [...colorvariants];
+      console.log("duplicateColorVariant", duplicateColorVariant);
+
+      if (colorvariants === duplicateColorVariant) {
+        console.log("how can possibly the be same ?????????");
+      } else {
+        console.log(
+          "yupppp , told yaaaaaa, it creates a new array in the memory with the unique reference"
+        );
+      }
+
+      const newArray = [...colorvariants, ...weekDays, ...nature];
+      console.log("newArray", newArray);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const num = [9,8,7,6,5,4]
+console.log("num before foreach",num)
+num.forEach(function(n){
+    console.log(n*4)
+   
+})
+console.log("num after foreach",num)
+
+
+
+const students = [
+  {
+    id: 1,
+    name: "Sai",
+  },
+  {
+    id: 2,
+    name: "Arthy",
+  },
+  { 
+    id: 3, 
+    name: "Ram" 
+  },
+  {
+    id: 4,
+    name: "Shyam",
+  },
+  {
+    id: 5,
+    name: "Ali",
+  },
+];
+
+
+
+students.forEach(function stuDetails(stuInfo){
+    console.log(stuInfo)
+
+})
+    </script>
+</body>
+</html>

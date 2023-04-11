@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closures Practice</title>
+</head>
+<body>
+    <script>
+        //closure : function inside function or the function which support the lexcial function
+        
+        let a="aish";
+        function greet(){
+            {
+             function greetFun(){
+                console.log("Good Afternoon");
+             }  
+             greetFun(); 
+            console.log("Good Morning"+ " "+ a);
+            }   
+            
+        }
+
+        greet();
+
+
+    </script>
+</body>
+</html>
